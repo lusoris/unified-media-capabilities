@@ -7,9 +7,10 @@
       "bitdepths": [8, 10],
       "chroma_formats": ["4:2:0"],
       "color_formats": ["nv12", "p010"],
-      "ffmpeg_flags": {
-        "profile": "-profile:v"
-      },
+      "features": ["AsyncDepth", "Protected"],
+      "max_frame_width": 8192,
+      "max_frame_height": 4352,
+      "ffmpeg_flags": { "profile": "-profile:v" },
       "query_capability_api": "MFXVideoDECODE_QueryCaps",
       "query_param_structure": "mfxVideoParam",
       "cap_structure": "mfxDecoderDescription"
@@ -19,9 +20,10 @@
       "bitdepths": [8, 10],
       "chroma_formats": ["4:2:0", "4:2:2", "4:4:4"],
       "color_formats": ["nv12", "p010", "yuy2", "rgb4"],
-      "ffmpeg_flags": {
-        "profile": "-profile:v"
-      },
+      "features": ["AsyncDepth", "Protected"],
+      "max_frame_width": 8192,
+      "max_frame_height": 4352,
+      "ffmpeg_flags": { "profile": "-profile:v" },
       "query_capability_api": "MFXVideoDECODE_QueryCaps",
       "query_param_structure": "mfxVideoParam",
       "cap_structure": "mfxDecoderDescription"
@@ -31,33 +33,10 @@
       "bitdepths": [8],
       "chroma_formats": ["4:2:0"],
       "color_formats": ["nv12", "rgb4", "yuy2"],
-      "ffmpeg_flags": {
-        "profile": "-profile:v"
-      },
-      "query_capability_api": "MFXVideoDECODE_QueryCaps",
-      "query_param_structure": "mfxVideoParam",
-      "cap_structure": "mfxDecoderDescription"
-    },
-    "mpeg2_qsv": {
-      "profiles": ["simple", "main"],
-      "bitdepths": [8],
-      "chroma_formats": ["4:2:0"],
-      "color_formats": ["nv12"],
-      "ffmpeg_flags": {
-        "profile": "-profile:v"
-      },
-      "query_capability_api": "MFXVideoDECODE_QueryCaps",
-      "query_param_structure": "mfxVideoParam",
-      "cap_structure": "mfxDecoderDescription"
-    },
-    "jpeg_qsv": {
-      "profiles": ["baseline"],
-      "bitdepths": [8],
-      "chroma_formats": ["4:2:0", "4:2:2"],
-      "color_formats": ["nv12", "yuy2"],
-      "ffmpeg_flags": {
-        "profile": "-profile:v"
-      },
+      "features": ["AsyncDepth", "Protected"],
+      "max_frame_width": 4096,
+      "max_frame_height": 2304,
+      "ffmpeg_flags": { "profile": "-profile:v" },
       "query_capability_api": "MFXVideoDECODE_QueryCaps",
       "query_param_structure": "mfxVideoParam",
       "cap_structure": "mfxDecoderDescription"
