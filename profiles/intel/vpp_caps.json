@@ -1,1 +1,33 @@
-{}
+{
+  "vendor": "intel",
+  "device_id": "auto-detected",
+  "vpp": {
+    "deinterlace": {
+      "modes": ["bob", "weave", "advanced"],
+      "ffmpeg_flags": { "mode": "-vf deinterlace_qsv" }
+    },
+    "denoise": {
+      "levels": [0, 1, 2, 3],
+      "ffmpeg_flags": { "level": "-vf denoise_qsv" }
+    },
+    "detail": {
+      "strength": [0, 1, 2],
+      "ffmpeg_flags": { "strength": "-vf detail_qsv" }
+    },
+    "procamp": {
+      "brightness": [-100, 100],
+      "contrast": [-100, 100],
+      "saturation": [-100, 100],
+      "hue": [-180, 180],
+      "ffmpeg_flags": { "procamp": "-vf procamp_qsv" }
+    },
+    "scaling": {
+      "modes": ["nearest", "bilinear", "advanced"],
+      "ffmpeg_flags": { "scale": "-vf scale_qsv=w:h" }
+    },
+    "color_conversion": {
+      "formats": ["nv12", "p010", "rgb4", "yuv444p"],
+      "ffmpeg_flags": { "format": "-vf format_qsv" }
+    }
+  }
+}
