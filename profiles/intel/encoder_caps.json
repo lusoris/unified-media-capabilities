@@ -90,7 +90,7 @@
       "chroma_formats": ["4:2:0", "4:2:2"],
       "color_formats": ["nv12", "yuy2"],
       "gop_structures": ["intra"],
-s      "features": ["AsyncDepth"],
+      "features": ["AsyncDepth"],
       "max_pic_width": 8192,
       "max_pic_height": 8192,
       "ffmpeg_flags": {
