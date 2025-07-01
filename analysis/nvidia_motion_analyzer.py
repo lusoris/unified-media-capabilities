@@ -1,0 +1,1 @@
+# NVIDIA motion analysis stub

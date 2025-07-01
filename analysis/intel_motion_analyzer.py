@@ -1,0 +1,1 @@
+# Intel motion analysis stub
