@@ -3,37 +3,13 @@
   "device_id": "auto-detected",
   "encoders": {
     "av1_qsv": {
-      "profiles": [
-        "main"
-      ],
-      "rate_control": [
-        "CBR",
-        "VBR",
-        "ICQ",
-        "LA_ICQ",
-        "LA",
-        "VBR_LA"
-      ],
-      "bitdepths": [
-        8,
-        10
-      ],
-      "chroma_formats": [
-        "4:2:0"
-      ],
-      "color_formats": [
-        "nv12",
-        "p010"
-      ],
-      "gop_structures": [
-        "ippp",
-        "ibbb"
-      ],
-      "features": [
-        "AsyncDepth",
-        "NumTemporalLayers",
-        "EncodedOrder"
-      ],
+      "profiles": ["main"],
+      "rate_control": ["CBR", "VBR", "ICQ", "LA_ICQ", "LA", "VBR_LA"],
+      "bitdepths": [8, 10],
+      "chroma_formats": ["4:2:0"],
+      "color_formats": ["nv12", "p010"],
+      "gop_structures": ["ippp", "ibbb"],
+      "features": ["AsyncDepth", "NumTemporalLayers", "EncodedOrder"],
       "max_pic_width": 8192,
       "max_pic_height": 4352,
       "ffmpeg_flags": {
@@ -47,50 +23,13 @@
       "cap_structure": "mfxEncodeCaps"
     },
     "hevc_qsv": {
-      "profiles": [
-        "main",
-        "main10",
-        "rext"
-      ],
-      "rate_control": [
-        "CBR",
-        "VBR",
-        "LA",
-        "LA_HRD",
-        "ICQ",
-        "VBR_LA"
-      ],
-      "bitdepths": [
-        8,
-        10
-      ],
-      "chroma_formats": [
-        "4:2:0",
-        "4:2:2",
-        "4:4:4"
-      ],
-      "color_formats": [
-        "nv12",
-        "p010",
-        "yuy2",
-        "rgb4",
-        "ayuv"
-      ],
-      "gop_structures": [
-        "ippp",
-        "ibbb",
-        "low_delay_b"
-      ],
-      "features": [
-        "AsyncDepth",
-        "MaxNumRefFrame",
-        "LowDelayBRC",
-        "Trellis",
-        "SAO",
-        "Tiles",
-        "CTU",
-        "Protected"
-      ],
+      "profiles": ["main", "main10", "rext"],
+      "rate_control": ["CBR", "VBR", "LA", "LA_HRD", "ICQ", "VBR_LA"],
+      "bitdepths": [8, 10],
+      "chroma_formats": ["4:2:0", "4:2:2", "4:4:4"],
+      "color_formats": ["nv12", "p010", "yuy2", "rgb4", "ayuv"],
+      "gop_structures": ["ippp", "ibbb", "low_delay_b"],
+      "features": ["AsyncDepth", "MaxNumRefFrame", "LowDelayBRC", "Trellis", "SAO", "Tiles", "CTU", "Protected"],
       "max_pic_width": 8192,
       "max_pic_height": 4352,
       "max_num_slice": 255,
@@ -107,39 +46,13 @@
       "cap_structure": "mfxEncodeCaps"
     },
     "h264_qsv": {
-      "profiles": [
-        "baseline",
-        "main",
-        "high",
-        "constrained_high"
-      ],
-      "rate_control": [
-        "CBR",
-        "VBR",
-        "LA",
-        "LA_HRD",
-        "ICQ"
-      ],
-      "bitdepths": [
-        8
-      ],
-      "chroma_formats": [
-        "4:2:0"
-      ],
-      "color_formats": [
-        "nv12",
-        "rgb4",
-        "yuy2"
-      ],
-      "gop_structures": [
-        "ippp",
-        "ibbb"
-      ],
-      "features": [
-        "AsyncDepth",
-        "MaxNumRefFrame",
-        "LowDelayBRC"
-      ],
+      "profiles": ["baseline", "main", "high", "constrained_high"],
+      "rate_control": ["CBR", "VBR", "LA", "LA_HRD", "ICQ"],
+      "bitdepths": [8],
+      "chroma_formats": ["4:2:0"],
+      "color_formats": ["nv12", "rgb4", "yuy2"],
+      "gop_structures": ["ippp", "ibbb"],
+      "features": ["AsyncDepth", "MaxNumRefFrame", "LowDelayBRC"],
       "max_pic_width": 4096,
       "max_pic_height": 2304,
       "ffmpeg_flags": {
@@ -153,30 +66,13 @@
       "cap_structure": "mfxEncodeCaps"
     },
     "mpeg2_qsv": {
-      "profiles": [
-        "simple",
-        "main"
-      ],
-      "rate_control": [
-        "CBR",
-        "VBR"
-      ],
-      "bitdepths": [
-        8
-      ],
-      "chroma_formats": [
-        "4:2:0"
-      ],
-      "color_formats": [
-        "nv12"
-      ],
-      "gop_structures": [
-        "ippp",
-        "ibbb"
-      ],
-      "features": [
-        "AsyncDepth"
-      ],
+      "profiles": ["simple", "main"],
+      "rate_control": ["CBR", "VBR"],
+      "bitdepths": [8],
+      "chroma_formats": ["4:2:0"],
+      "color_formats": ["nv12"],
+      "gop_structures": ["ippp", "ibbb"],
+      "features": ["AsyncDepth"],
       "max_pic_width": 1920,
       "max_pic_height": 1080,
       "ffmpeg_flags": {
@@ -188,30 +84,13 @@
       "cap_structure": "mfxEncodeCaps"
     },
     "jpeg_qsv": {
-      "profiles": [
-        "baseline"
-      ],
-      "rate_control": [
-        "CBR",
-        "VBR"
-      ],
-      "bitdepths": [
-        8
-      ],
-      "chroma_formats": [
-        "4:2:0",
-        "4:2:2"
-      ],
-      "color_formats": [
-        "nv12",
-        "yuy2"
-      ],
-      "gop_structures": [
-        "intra"
-      ],
-      "features": [
-        "AsyncDepth"
-      ],
+      "profiles": ["baseline"],
+      "rate_control": ["CBR", "VBR"],
+      "bitdepths": [8],
+      "chroma_formats": ["4:2:0", "4:2:2"],
+      "color_formats": ["nv12", "yuy2"],
+      "gop_structures": ["intra"],
+s      "features": ["AsyncDepth"],
       "max_pic_width": 8192,
       "max_pic_height": 8192,
       "ffmpeg_flags": {
