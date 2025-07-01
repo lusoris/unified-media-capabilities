@@ -4,14 +4,17 @@
   "vpp": {
     "deinterlace": {
       "modes": ["bob", "weave", "advanced"],
+      "features": ["Adaptive"],
       "ffmpeg_flags": { "mode": "-vf deinterlace_qsv" }
     },
     "denoise": {
       "levels": [0, 1, 2, 3],
+      "features": ["DetailEnhancement"],
       "ffmpeg_flags": { "level": "-vf denoise_qsv" }
     },
     "detail": {
       "strength": [0, 1, 2],
+      "features": [],
       "ffmpeg_flags": { "strength": "-vf detail_qsv" }
     },
     "procamp": {
@@ -19,14 +22,17 @@
       "contrast": [-100, 100],
       "saturation": [-100, 100],
       "hue": [-180, 180],
+      "features": ["ColorBalance"],
       "ffmpeg_flags": { "procamp": "-vf procamp_qsv" }
     },
     "scaling": {
       "modes": ["nearest", "bilinear", "advanced"],
+      "features": ["HardwareAccelerated"],
       "ffmpeg_flags": { "scale": "-vf scale_qsv=w:h" }
     },
     "color_conversion": {
       "formats": ["nv12", "p010", "rgb4", "yuv444p"],
+      "features": ["ColorSpaceConversion"],
       "ffmpeg_flags": { "format": "-vf format_qsv" }
     }
   }
